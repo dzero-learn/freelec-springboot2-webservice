@@ -15,13 +15,10 @@ public class Posts { // 실제 DB의 테이블과 매칭될 클래스 = Entity �
     @Id // PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 생성규칙, GenerationType.IDENTITY=auto_increment
     private Long id;
-
     @Column(length = 500, nullable = false) // 테이블의 칼럼, 기본값 외에 추가로 변경이 필요한 옵션이 있을 경우 명시
     private String title;
-
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
-
     private String author; // 별도 옵션 없으면 @Column 명시 안 해줘도 됨
 
     @Builder // 해당 클래스의 빌더 패턴 클래스 생성(? 뭔소리람)

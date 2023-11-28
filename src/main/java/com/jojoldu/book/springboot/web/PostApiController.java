@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequiredArgsConstructor
+@RequiredArgsConstructor // final 붙은 멤버변수 인자값으로 생성자 자동 생성
 @RestController
 public class PostApiController {
     private final PostsService postsService;
