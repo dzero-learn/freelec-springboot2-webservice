@@ -17,3 +17,4 @@ public class PostApiController {
         return postsService.save(requestDto);
     }
 }
+
