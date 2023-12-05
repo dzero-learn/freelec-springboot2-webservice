@@ -27,3 +27,4 @@ public class PostApiController {
         return postsService.findById(id);
     }
 }
+
